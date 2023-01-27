@@ -1,0 +1,28 @@
+{
+  "name": "@mycomponentsofvue/testinout",
+  "version": "1.0.1",
+  "description": "just test",
+  "main": "dist/testinout.umd.min.js",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "../../node_modules/.bin/vue-cli-service build --target lib --name testinout src/index.js",
+    "build:webpack": "../../node_modules/.bin/webpack --config ../../build/webpack.build.vue.js",
+    "test": "echo \"Error: no testinout specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vue": "^2.6.10"
+  },
+  "peerDependencies": {
+    "element-ui": "^2.13.2"
+  },
+  "gitHead": "09a874b5e039f9e2a8181bdcd0f8bc5157180848"
+}
