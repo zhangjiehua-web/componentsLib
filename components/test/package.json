@@ -1,5 +1,5 @@
 {
-  "name": "@kxxxl-front-end/test",
+  "name": "@mycomponentsofvue/test",
   "version": "1.0.2",
   "description": "just test",
   "main": "dist/test.umd.min.js",
