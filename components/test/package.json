@@ -1,0 +1,28 @@
+{
+  "name": "@kxxxl-front-end/test",
+  "version": "1.0.2",
+  "description": "just test",
+  "main": "dist/test.umd.min.js",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "../../node_modules/.bin/vue-cli-service build --target lib --name test src/index.js",
+    "build:webpack": "../../node_modules/.bin/webpack --config ../../build/webpack.build.vue.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vue": "^2.6.10"
+  },
+  "peerDependencies": {
+    "element-ui": "^2.13.2"
+  },
+  "gitHead": "8e3874a6fb855c53d37cf8b8918636a3a914f63c"
+}

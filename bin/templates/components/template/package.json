@@ -1,0 +1,25 @@
+{
+  "name": "@kxxxl-front-end/<%= name %>",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/<%= name %>.umd.min.js",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "../../node_modules/.bin/vue-cli-service build --target lib --name <%= name %> src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+  },
+  "peerDependencies": {
+    "vue": "^2.6.10"
+  }
+}

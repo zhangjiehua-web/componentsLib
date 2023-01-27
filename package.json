@@ -1,0 +1,67 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.13",
+    "@babel/preset-env": "^7.11.0",
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "@vue/cli-service": "4.3.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.3.0",
+    "babel-loader": "^8.1.0",
+    "cac": "^6.6.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^7.0.0-beta.2",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "mini-css-extract-plugin": "^1.0.0",
+    "node-sass": "^4.14.1",
+    "prettier": "2.8.1",
+    "rollup": "^2.26.11",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "sass-loader": "^10.0.3",
+    "tslib": "^2.0.3",
+    "typescript": "^4.0.5",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.5.21",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "yargs": "^16.0.3",
+    "yo": "^3.1.1"
+  },
+  "scripts": {
+    "create": "yo ./bin/generators",
+    "prepublish": "lerna publish --pre-dist-tag pre",
+    "init": "npm i & lerna bootstrap",
+    "lint": "eslint",
+    "publish": "lerna publish",
+    "cli": "node .bin/cli.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "dependencies": {
+    "aws-sdk": "^2.792.0",
+    "lodash": "^4.17.20",
+    "number-precision": "^1.5.0",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "yeoman-generator": "^4.12.0"
+  }
+}

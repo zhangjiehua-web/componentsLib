@@ -1,0 +1,20 @@
+{
+  "name": "@kxxxl-front-end/<%= name %>",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/<%= name %>.umd.js",
+  "module": "./dist/<%= name %>.esm.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build:rollup": "../../node_modules/.bin/rollup --config ../../build/rollup.build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

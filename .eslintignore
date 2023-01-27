@@ -1,0 +1,7 @@
+
+node_modules
+
+bin/templates/**
+
+*/**/node_modules
+*/**/dist/*
